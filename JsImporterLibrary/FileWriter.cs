@@ -93,7 +93,7 @@ namespace JsImporterLibrary
                         if (crew.HasContract(currentDate) && crew.NeedsJS(currentDate) && crew.HasValidBase(currentDate, out crewBase))
                         {
                                 string start = currentDate.Year.ToString() + currentDate.Month.ToString().PadLeft(2, '0') + currentDate.Day.ToString().PadLeft(2, '0');
-                                string end = currentDate.AddDays(dayInOffPeriod + 1).Year.ToString() + currentDate.AddDays(1).Month.ToString().PadLeft(2, '0') + currentDate.AddDays(1).Day.ToString().PadLeft(2, '0');
+                                string end = currentDate.AddDays(1).Year.ToString() + currentDate.AddDays(1).Month.ToString().PadLeft(2, '0') + currentDate.AddDays(1).Day.ToString().PadLeft(2, '0');
                                 ctfSb.AppendLine($"{crew.PersNr} * F 0 {start} {crewBase} 0000 JS * * 0000 {crewBase} {end}");
                         }
                         else if(crew.HasContract(currentDate) && crew.HasValidBase(currentDate) == false)
