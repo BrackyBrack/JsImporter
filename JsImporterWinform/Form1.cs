@@ -34,8 +34,8 @@ namespace JsImporterWinform
         {
             try
             {
-                JsImporterLibrary.ImportBuilder importBuilder = new JsImporterLibrary.ImportBuilder(startDate, endDate, csvLocation);
-                importBuilder.BuildImport();
+              JsImporterLibrary.ImportBuilder importBuilder = new JsImporterLibrary.ImportBuilder(startDate, endDate, csvLocation);
+              importBuilder.BuildImport();
             }
             catch (Exception ex)
             {
