@@ -58,9 +58,9 @@ namespace DataAccess
         public static OracleConnection GetLiveConnection()
         {
             //Prod connection settings
-            string host = "idpsliveaix.tuiad.net";
+            string host = "goslive.oracle.tui.de.insite";
             int port = 1539;
-            string database = "goslive.britanniaairways.com";
+            string database = "goslive";
             string username = "batch";
             string password = "batch5421";
 
